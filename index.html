@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Name — Sample Website</title>
+  <meta name="description" content="A super-simple webpage that displays a name with clean, modern styling." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="site-title">
+    <h1 id="site-title"><span id="name">MINESH</span></h1>
+    <p>A tiny, beautiful page that shows a single name. ✨</p>
+    <div class="name-pill" aria-live="polite">
+      Current name: <strong id="name-pill">ITACHI</strong>
+    </div>
+
+    <div class="input-row">
+      <input id="name-input" type="text" placeholder="Type a name… (e.g., Priya, Rahul)" aria-label="Name input" />
+      <button id="set-btn" type="button">Set Name</button>
+    </div>
+
+    <footer>
+      <div class="hint">Tip: You can also set the name via URL like <code>?name=YourName</code></div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
